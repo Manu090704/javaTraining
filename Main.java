@@ -1,12 +1,21 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import Anotaciones.Anotaciones;
 import SOLID.*;
 import Hilos.hilos;
 import ReadRegex.*;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.FileOutputStream;
+
+
 public class Main {
+    @Anotaciones(date = "2024-10-10", author = "ChatGPT", version = 1)
     public static void main(String[] args) {
 
+        System.out.println("Regex");
         //Expresiones Regulares
         ReadRegex.ReadMatch("hola@ge.com");
         ReadRegex.ReadMatch("@ge.com");
@@ -51,6 +60,7 @@ public class Main {
             }
         }
 
+        System.out.println("Colecciones:");
         // Estructuras más complejas
         ArrayList<Integer> lista = new ArrayList<>();
         lista.add(1);
@@ -67,8 +77,25 @@ public class Main {
         // Manejo de excepciones
         try {
             int resultado = numero / 0;
+            System.out.println(resultado);
         } catch (ArithmeticException e) {
-            System.out.println("Error: División por cero");
+            System.out.println("Error: Division por cero");
+        }
+
+        // Manejo de archivos
+        try (FileInputStream fis = new FileInputStream("input.txt");
+             FileOutputStream fos = new FileOutputStream("output.txt")) {
+
+            
+            int bytesRead;
+            while ((bytesRead = fis.read()) != -1) {
+                fos.write(bytesRead);
+            }
+
+            System.out.println("Archivo copiado exitosamente.");
+
+        } catch (IOException e) {
+            System.out.println("Error con el copiado de archivos: " + e.getMessage());
         }
     }
 }
