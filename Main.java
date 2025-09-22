@@ -12,7 +12,7 @@ import java.io.FileOutputStream;
 
 
 public class Main {
-    @Anotaciones(date = "2024-10-10", author = "ChatGPT", version = 1)
+    @Anotaciones(date = "2024-10-10", author = "ManuelBajos", version = 1)
     public static void main(String[] args) {
 
         System.out.println("Regex");
