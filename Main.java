@@ -15,17 +15,18 @@ public class Main {
     @Anotaciones(date = "2024-10-10", author = "ManuelBajos", version = 1)
     public static void main(String[] args) {
 
-        System.out.println("Regex");
+        System.out.println("Regex:");
         //Expresiones Regulares
         ReadRegex.ReadMatch("hola@ge.com");
         ReadRegex.ReadMatch("@ge.com");
         ReadRegex.ReadMatch("prueba@gmail.com");
-
+        
         //Hilos
         Thread hilo1 = new Thread(new hilos());
         hilo1.start();
 
 
+        System.out.println("POO con SOLID:");
         // Superhéroes
         Superheroe superman = new Superheroe("Superman");
         Superheroe flash = new Superheroe("Flash");
@@ -52,6 +53,7 @@ public class Main {
         int numero = 10;
         String texto = "Hola";
 
+        System.out.println("Arreglo simple:");
         //array
         int [] arr = {1,2,3,4,5,6,7};
         for (int j : arr) {
@@ -74,6 +76,7 @@ public class Main {
         System.out.println(mapa);
         System.out.println(mapa.get("dos"));
 
+        System.out.println("Manejo de excepciones e I/O:");
         // Manejo de excepciones
         try {
             int resultado = numero / 0;
