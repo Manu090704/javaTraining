@@ -20,7 +20,7 @@ public class Main {
         ReadRegex.ReadMatch("hola@ge.com");
         ReadRegex.ReadMatch("@ge.com");
         ReadRegex.ReadMatch("prueba@gmail.com");
-        
+
         //Hilos
         Thread hilo1 = new Thread(new hilos());
         hilo1.start();
