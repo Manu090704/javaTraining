@@ -1,14 +1,15 @@
 package SOLID;
 
-//Single Responsability: Aquí se aplica
-// asignandole una tarea a una clase
-// superheroe generico y si vuela
-// se agrega en otra clase.
+// Single Responsability: Aquí se aplica
+// asignandole una clase superheroe
+// generico y si tiene poder se delega
+// a las interfaces y se llaman en
+// otra clase.
 
-// Liskov Principle: Aquí se aplica
-// en el main ya que vemos como se
-// declaran los objetos con su clase
-// base o padre.
+// Liskov Principle: Aquí las clases
+// que implementan las interfaces
+// pueden sustituir a la interfaz
+// padre sin afectar el comportamiento.
 public class Superheroe {
     String nombre;
 
@@ -20,10 +21,10 @@ public class Superheroe {
     }
 }
 
-// Open/Close: Aquí se aplica
-// creando una nueva interfaz
-// en lugar de modificar la clase
-// o interfaz ya existente.
+// Open/Close: Se aplica creando una
+// nueva interfaz en lugar de
+// modificar la clase o interfaz
+// ya existente.
 
 // Interface Segregation: Muchas
 // interfaces específicas que una
