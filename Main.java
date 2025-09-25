@@ -4,6 +4,7 @@ import java.util.HashMap;
 import Anotaciones.Anotaciones;
 import SOLID.*;
 import Hilos.hilos;
+import Hilos.hilosClass;
 import ReadRegex.*;
 
 import java.io.FileInputStream;
@@ -24,6 +25,9 @@ public class Main {
         //Hilos
         Thread hilo1 = new Thread(new hilos());
         hilo1.start();
+
+        Thread hilo2 = new Thread(new hilosClass());
+        hilo2.start();
 
 
         System.out.println("POO con SOLID:");
