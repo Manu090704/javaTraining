@@ -66,6 +66,12 @@ public class Main {
             }
         }
 
+       // for (int j : 9) {
+       //     if (j % 2 == 0) {
+       //         System.out.println(j);
+       //     }
+        // }
+
         System.out.println("Colecciones:");
         // Estructuras más complejas
         ArrayList<Integer> lista = new ArrayList<>();
@@ -74,12 +80,16 @@ public class Main {
         lista.add(3);
         System.out.println(lista);
 
+        // error porque se sale del rango
+        //System.out.println(lista.get(5));
+
         HashMap<String, Integer> mapa = new HashMap<>();
         mapa.put("uno", 1);
         mapa.put("dos", 2);
         System.out.println(mapa);
         System.out.println(mapa.get("dos"));
 
+        // maneja archivos por bytes
         System.out.println("Manejo de excepciones e I/O:");
         // Manejo de excepciones
         try {
