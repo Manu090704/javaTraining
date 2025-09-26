@@ -10,6 +10,11 @@ package SOLID;
 // sin modificar la clase. Es decir
 // ayuda a no tener que llamar a un
 // constructor diferente por clase.
+
+//Patrón de diseño: Startegy
+// Se utiliza encapsulando un grupo
+// de comportamientos y no hacer una
+// por cada comportamiento distinto.
 public class HeroeTeam {
     private Power power;
 
